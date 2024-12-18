@@ -1,95 +1,75 @@
-# Projeto ETL Python
+
+
+Aqui está um exemplo de como você pode estruturar o `README.md` para rodar o `exemplo_05.py` e instalar as dependências através do `requirements.txt`:
+
+````markdown
+# Projeto ETL Python - Exemplo 05
 
 ## 📝 Descrição
-Um projeto ETL (Extract, Transform, Load) em Python que extrai dados de APIs, processa as informações e as carrega em um destino específico.
+Este exemplo demonstra como fazer uma requisição à API da OpenAI usando Python. O script `exemplo_05.py` carrega uma chave de API de um arquivo `.env`, faz uma requisição para a API de chat da OpenAI e imprime a resposta.
 
 ## 🚀 Funcionalidades
-- Extração automatizada de dados via API
-- Transformação de dados em tempo real
-- Carregamento de dados processados
-- Tratamento de erros e logs
+- Carregamento de variáveis de ambiente usando `python-dotenv`
+- Requisição HTTP para a API da OpenAI
+- Tratamento de erros e exibição de respostas
 
 ## 🛠️ Tecnologias
 - Python 3.x
-- pandas
 - requests
 - python-dotenv
 
 ## 🔧 Configuração
-1. Clone o repositório:
-```
 
-git clone https://github.com/seu-usuario/projeto-etl-python.git
-cd projeto-etl-python
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-etl-python.git
+   cd projeto-etl-python
+   ```
 
-2. Instale as dependências:
-```
+2. **Crie e ative um ambiente virtual:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # No Windows use: .venv\Scripts\activate
+   ```
 
-pip install -r requirements.txt
-```
+3. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Configure as variáveis de ambiente no arquivo `.env`:
-```
-
-API_KEY=sua_chave_api
-API_URL=url_da_api
-OUTPUT_PATH=data/output
-```
-
-## 📊 Estrutura do Projeto
-```
-
-projeto-etl-python/
-├── src/
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── main.py
-├── config/
-│   └── config.py
-├── data/
-│   ├── raw/
-│   └── processed/
-├── logs/
-├── tests/
-├── .env
-├── requirements.txt
-└── README.md
-```
+4. **Configure as variáveis de ambiente no arquivo `.env`:**
+   Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+   ```text
+   OPENAI_API_KEY=sua_chave_api_aqui
+   ```
 
 ## 🚀 Como Executar
-```
 
-python src/main.py
-```
+1. **Execute o script `exemplo_05.py`:**
+   ```bash
+   python exemplos/exemplo_05.py
+   ```
+
+   O script fará uma requisição à API da OpenAI e imprimirá a resposta no console.
 
 ## 📈 Fluxo de Dados
-1. **Extração**: Coleta de dados da API
-2. **Transformação**: Processamento e limpeza dos dados
-3. **Carregamento**: Armazenamento no destino
-
-## 🤝 Como Contribuir
-1. Faça um Fork do projeto
-2. Crie sua Branch de recurso (`git checkout -b feature/NovoRecurso`)
-3. Faça commit das alterações (`git commit -m 'Adiciona NovoRecurso'`)
-4. Faça Push para a Branch (`git push origin feature/NovoRecurso`)
-5. Abra um Pull Request
+1. **Carregamento de Variáveis**: O script carrega a chave da API do arquivo `.env`.
+2. **Requisição à API**: Envia uma mensagem para a API da OpenAI.
+3. **Exibição da Resposta**: Imprime a resposta da API no console.
 
 ## 📝 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## ✒️ Autor
 * Seu Nome - [Perfil GitHub](https://github.com/seu-usuario)
-```
+````
 
-Principais alterações feitas:
-1. Tradução completa para português
-2. Simplificação das seções de descrição e funcionalidades
-3. Especificação das tecnologias principais
-4. Instruções de configuração mais diretas
-5. Estrutura de projeto mais clara
-6. Remoção de seções redundantes
-7. Adição de estrutura adequada para o diretório de dados
-8. Simplificação da seção de contribuição
+### Explicação
 
+- **Descrição**: Explica o que o exemplo faz.
+- **Funcionalidades**: Lista as principais funcionalidades do script.
+- **Tecnologias**: Especifica as bibliotecas usadas.
+- **Configuração**: Instruções para clonar o repositório, criar um ambiente virtual, instalar dependências e configurar o arquivo `.env`.
+- **Como Executar**: Passos para rodar o script.
+- **Fluxo de Dados**: Descreve o processo de execução do script.
+- **Licença e Autor**: Informações sobre a licença e o autor do projeto.

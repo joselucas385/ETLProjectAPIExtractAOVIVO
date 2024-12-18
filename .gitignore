@@ -1,0 +1,6 @@
+# Ambiente Virtual Python
+.venv
+
+#arquivo de configuração usado pelo Git para especificar quais arquivos e pastas devem ser ignorados no
+# controle de versão. Isso significa que estes arquivos não serão rastreados ou enviados para o 
+# repositório.
